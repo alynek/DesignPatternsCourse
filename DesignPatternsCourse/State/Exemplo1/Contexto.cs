@@ -1,4 +1,4 @@
-﻿namespace DesignPatternsCourse.State
+﻿namespace DesignPatternsCourse.State.Exemplo1
 {
     public class Contexto
     {
@@ -12,10 +12,11 @@
         public State State
         {
             get { return _estado; }
-            set 
-            { 
+            set
+            {
+                var estadoAntigo = _estado.GetType().Name;
                 _estado = value;
-                Console.WriteLine($"Alterado para: {_estado.GetType().Name}");
+                Console.WriteLine($"Alterado de: {estadoAntigo}, para: {_estado.GetType().Name}");
             }
         }
 

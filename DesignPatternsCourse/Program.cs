@@ -20,8 +20,12 @@
 #region padrão state
 
 using DesignPatternsCourse.State;
+using DesignPatternsCourse.State.Exemplo1;
 
 Contexto contexto = new(new Donkey());
+contexto.Troca();
+contexto.Troca();
+contexto.Troca();
 contexto.Troca();
 
 

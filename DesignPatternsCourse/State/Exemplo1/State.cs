@@ -1,4 +1,4 @@
-﻿namespace DesignPatternsCourse.State
+﻿namespace DesignPatternsCourse.State.Exemplo1
 {
     public abstract class State
     {

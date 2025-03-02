@@ -1,4 +1,4 @@
-﻿namespace DesignPatternsCourse.State
+﻿namespace DesignPatternsCourse.State.Exemplo1
 {
     public class Donkey : State
     {
