@@ -2,6 +2,6 @@
 {
     public abstract class State
     {
-        public abstract void Acao(Contexto contexto);
+        public abstract void Troca(Personagem contexto);
     }
 }

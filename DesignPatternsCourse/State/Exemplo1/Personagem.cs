@@ -1,10 +1,10 @@
 ﻿namespace DesignPatternsCourse.State.Exemplo1
 {
-    public class Contexto
+    public class Personagem
     {
         private State _estado;
 
-        public Contexto(State estado)
+        public Personagem(State estado)
         {
             _estado = estado;
         }
@@ -22,7 +22,7 @@
 
         public void Troca()
         {
-            _estado.Acao(this);
+            _estado.Troca(this);
         }
     }
 }
