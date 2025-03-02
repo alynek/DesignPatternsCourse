@@ -1,4 +1,4 @@
-﻿namespace DesignPatternsCourse.RevestimentoBase
+﻿namespace DesignPatternsCourse.Factory.RevestimentoBase
 {
     public class RevestimentoBaseTerran : IRevestimento
     {

@@ -1,4 +1,4 @@
-﻿namespace DesignPatternsCourse.EnergiaBase
+﻿namespace DesignPatternsCourse.Factory.EnergiaBase
 {
     public class EnergiaBaseProtoss : IEnergia
     {

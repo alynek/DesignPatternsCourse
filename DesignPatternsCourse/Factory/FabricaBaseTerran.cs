@@ -1,5 +1,5 @@
-﻿using DesignPatternsCourse.EnergiaBase;
-using DesignPatternsCourse.RevestimentoBase;
+﻿using DesignPatternsCourse.Factory.EnergiaBase;
+using DesignPatternsCourse.Factory.RevestimentoBase;
 
 namespace DesignPatternsCourse.Factory
 {
