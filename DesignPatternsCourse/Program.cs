@@ -1,9 +1,10 @@
-﻿//using DesignPatternsCourse.Factory;
+﻿#region padrão factory
+
+//using DesignPatternsCourse.Factory;
 //using DesignPatternsCourse.Factory.EnergiaBase;
 //using DesignPatternsCourse.Factory.RevestimentoBase;
 //using Microsoft.Extensions.DependencyInjection;
 
-////Padrão factory
 //var serviceProvider = new ServiceCollection()
 //    .AddScoped<IRevestimento, RevestimentoBaseTerran>()
 //    .AddScoped<IEnergia, EnergiaBaseTerran>()
@@ -14,5 +15,14 @@
 
 //var baseterran = new FabricaBaseTerran(revestimento, energia);
 
+#endregion
 
-//Padrão state
+#region padrão state
+
+using DesignPatternsCourse.State;
+
+Contexto contexto = new(new Donkey());
+contexto.Troca();
+
+
+#endregion
