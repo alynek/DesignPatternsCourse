@@ -19,14 +19,31 @@
 
 #region padrão state
 
-using DesignPatternsCourse.State;
-using DesignPatternsCourse.State.Exemplo1;
+using DesignPatternsCourse.State.Exemplo2;
+using DesignPatternsCourse.State.Exemplo2.Implementacao;
 
-Contexto contexto = new(new Donkey());
-contexto.Troca();
-contexto.Troca();
-contexto.Troca();
-contexto.Troca();
+//Exemplo1
 
+//Personagem contexto = new(new Donkey());
+//contexto.Troca();
+//contexto.Troca();
+//contexto.Troca();
+//contexto.Troca();
+
+
+//Exemplo2
+
+Documento documento = new(new Rascunho());
+//Publicando um documento que estava em modo rascunho
+documento.Publicar();
+
+//Inativando um documento que estava em modo publicado
+documento.Inativar();
+
+//Publicando um documento que estava em modo inativo
+documento.Publicar();
+
+//Publicando um documento que estava em modo rascunho
+documento.Publicar();
 
 #endregion
