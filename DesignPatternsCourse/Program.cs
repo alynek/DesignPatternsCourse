@@ -21,6 +21,7 @@
 
 using DesignPatternsCourse.State.Exemplo2;
 using DesignPatternsCourse.State.Exemplo2.Implementacao;
+using Microsoft.Extensions.DependencyInjection;
 
 //Exemplo1
 
@@ -33,7 +34,16 @@ using DesignPatternsCourse.State.Exemplo2.Implementacao;
 
 //Exemplo2
 
-Documento documento = new(new Rascunho());
+var serviceProvider = new ServiceCollection()
+    .AddScoped<IEstadoDocumento, Inativo>()
+    .AddScoped<IEstadoDocumento, Publicado>()
+    .AddScoped<IEstadoDocumento, Rascunho>()
+    .BuildServiceProvider();
+
+//um documento sempre vai começar  no modo rascunho
+var rascunho = serviceProvider.GetService<IEstadoDocumento>();
+
+Documento documento = new(rascunho);
 //Publicando um documento que estava em modo rascunho
 documento.Publicar();
 
